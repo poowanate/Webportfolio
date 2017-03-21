@@ -51,7 +51,10 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <i class="glyphicon glyphicon-earphone"></i>
     <p>CONTACT</p>
   </a>
-  noone
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="glyphicon glyphicon-earphone"></i>
+    <p>CONTACT</p>
+  </a>
 </nav>
 
 
