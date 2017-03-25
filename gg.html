@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS</title>
+<title>Poowa-rilo</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/w3.css">
 <link rel="stylesheet" href="css/font.css">
 <link rel="stylesheet" href="css/fontawsome.css">
-<link rel="stylesheet" href="css/nivo-slider.css" media="screen">
+<link rel="stylesheet" href="themes/default/default.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <style>
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
@@ -37,15 +38,11 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   </a>
   <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="glyphicon glyphicon-hdd"></i>
-    <p>APTITUDE</p>
-  </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="glyphicon glyphicon-picture"></i>
-    <p>PORTFOLIO</p>
+    <p>WORK</p>
   </a>
   <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
   <i class="glyphicon glyphicon-user"></i>
-    <p>ABOUT ME</p>
+    <p>ABOUT</p>
   </a>
   <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="glyphicon glyphicon-earphone"></i>
@@ -58,14 +55,14 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <!-- Navbar on small screens (Hidden on medium and large screens) -->
 <div class="w3-top w3-hide-large w3-hide-medium" id="mySidebar">
   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:16.6% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:16.6% !important">SKILL</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:16.6% !important">APTITUDE</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:16.6% !important">PORTFOLIO</a>
-    <a href="#" class="w3-bar-item w3-button" style="width:16.6% !important">ABOUT ME</a>
-    <a href="#" class="w3-bar-item w3-button" style="width:16.6% !important">CONTACT</a>
-<button class="w3-bar-item w3-button w3-hide-large"
-  onclick="w3_close()">Close &times;</button>
+    <select class="selectnav w3-bar-item w3-button " onchange="location.href=this.value">
+              <option value="gg.html">Home</option>
+              <option value="skills.html">Skills</option>
+              <option value="work.html">Work</option>
+              <option value="about.html">About</option>
+              <option value="contact.html" >Contact</option>
+              </select>
+
 </div>
 
 </div>
@@ -76,20 +73,13 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <header class="w3-container w3-padding-32 w3-center w3-dark-grey" id="home">
     <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> TOP</h1>
     <p>Digital marketing and Web Designer.</p>
-   <div class="slider-wrapper futurico-theme">
- 
-    <div id="slider" class="nivoSlider">
- 
-        <img src="img/slide1.png" alt="">
- 
-        <img src="img/slide2.png" alt="">
- 
-        <img src="img/slide3.png" alt="">
- 
-        <img src="img/slide4.png" alt="">
- 
-    </div>
- 
+ <div class="slider-wrapper futurico-theme">
+   <div id="slider" class="nivoSlider theme-default "> 
+<img src="images/welcome.png" data-thumb="images/toystory.jpg" alt="" /> 
+<img src="images/Portfolio.png" data-thumb="images/up.jpg" alt=""  />
+
+</div>
+ </div>
 </div>
   </header>
 
@@ -254,9 +244,10 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 <!-- END PAGE CONTENT -->
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script src="js/jquery.nivo.slider.pack.js"></script>
-</body>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+
 <script>
     $(window).load(function() {
         $('#slider').nivoSlider({
@@ -267,13 +258,6 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
         });
     });
 </script>
-<script type="text/javascript">
-  function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-}
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-}
 
-</script>
+
 </html>

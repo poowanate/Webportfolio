@@ -33,7 +33,7 @@
 	left:0px;
 	width:100%;
 	height:100%;
-	border:0;
+	border:10px;
 	padding:0;
 	margin:0;
 	z-index:6;
@@ -93,14 +93,12 @@
 	top:45%;
 	z-index:9;
 	cursor:pointer;
-
 }
 .nivo-prevNav {
-	left:10px;
-	
+	left:0px;
 }
 .nivo-nextNav {
-	right:10px;
+	right:0px;
 }
 /* Control nav styles (e.g. 1,2,3...) */
 .nivo-controlNav {
@@ -108,7 +106,7 @@
 	padding: 15px 0;
 }
 .nivo-controlNav a {
-	cursor:pointer
+	cursor:pointer;
 }
 .nivo-controlNav a.active {
 	font-weight:bold;
@@ -125,25 +123,9 @@
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-}
- 
-.futurico-theme .nivoSlider {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
- 
-.futurico-theme .nivoSlider img {
-    display: none;
-    position: absolute;
-    width: 290px;
-    height: 170px;
-    top: 0;
-    left: 0;
-}
-.futurico-theme .nivo-controlNav a {
+}.futurico-theme .nivo-controlNav a {
     display: block;
-    float: left;
+    float: right;
     width: 16px;
     height: 16px;
     margin-right: 5px;
@@ -158,12 +140,11 @@
     -webkit-box-shadow: inset 0px 1px 1px rgba(0,0,0, .5), 0px 1px 1px rgba(255,255,255, .05);
     -moz-box-shadow: inset 0px 1px 1px rgba(0,0,0, .5), 0px 1px 1px rgba(255,255,255, .05);
     box-shadow: inset 0px 1px 1px rgba(0,0,0, .5), 0px 1px 1px rgba(255,255,255, .05);
-}
-.futurico-theme .nivo-controlNav a.active,
+}.futurico-theme .nivo-controlNav a.active,
 .futurico-theme .nivo-caption span {
     background: #a5cd4e;
     background: -moz-linear-gradient(top,  #a5cd4e 0%, #6b8f1a 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a5cd4e), color-stop(100%,#6b8f1a));
+    background: -webkit-gradient(linear, right top, right bottom, color-stop(0%,#a5cd4e), color-stop(100%,#6b8f1a));
     background: -webkit-linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%);
     background: -o-linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%);
     background: -ms-linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%);
